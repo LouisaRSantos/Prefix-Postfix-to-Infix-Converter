@@ -125,6 +125,7 @@
             this.BTN_pre.TabIndex = 3;
             this.BTN_pre.Text = "Prefix";
             this.BTN_pre.UseVisualStyleBackColor = true;
+            this.BTN_pre.Click += new System.EventHandler(this.BTN_pre_Click);
             // 
             // BTN_post
             // 

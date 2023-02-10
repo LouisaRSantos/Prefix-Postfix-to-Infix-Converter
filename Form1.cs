@@ -12,9 +12,11 @@ namespace Prefix_and_Postfix_to_Infix_Converter
 {
     public partial class PrePostConverter : Form
     {
+        public static PrePostConverter instance;
         public PrePostConverter()
         {
             InitializeComponent();
+            instance = this;
         }
 
         private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -35,6 +37,12 @@ namespace Prefix_and_Postfix_to_Infix_Converter
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BTN_pre_Click(object sender, EventArgs e)
+        {
+            PrefixForm form2 = new PrefixForm();
+            form2.Show();
         }
     }
 }

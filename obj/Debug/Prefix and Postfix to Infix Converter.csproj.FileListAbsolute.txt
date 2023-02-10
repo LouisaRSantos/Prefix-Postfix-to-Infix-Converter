@@ -7,3 +7,4 @@ c:\users\santos\documents\visual studio 2013\Projects\Prefix and Postfix to Infi
 c:\users\santos\documents\visual studio 2013\Projects\Prefix and Postfix to Infix Converter\Prefix and Postfix to Infix Converter\obj\Debug\Prefix and Postfix to Infix Converter.csproj.GenerateResource.Cache
 c:\users\santos\documents\visual studio 2013\Projects\Prefix and Postfix to Infix Converter\Prefix and Postfix to Infix Converter\obj\Debug\Prefix and Postfix to Infix Converter.exe
 c:\users\santos\documents\visual studio 2013\Projects\Prefix and Postfix to Infix Converter\Prefix and Postfix to Infix Converter\obj\Debug\Prefix and Postfix to Infix Converter.pdb
+c:\users\santos\documents\visual studio 2013\Projects\Prefix and Postfix to Infix Converter\Prefix and Postfix to Infix Converter\obj\Debug\Prefix_and_Postfix_to_Infix_Converter.PrefixForm.resources
