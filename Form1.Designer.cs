@@ -135,6 +135,7 @@
             this.BTN_post.TabIndex = 4;
             this.BTN_post.Text = "Postfix";
             this.BTN_post.UseVisualStyleBackColor = true;
+            this.BTN_post.Click += new System.EventHandler(this.BTN_post_Click);
             // 
             // exitToolStripMenuItem
             // 

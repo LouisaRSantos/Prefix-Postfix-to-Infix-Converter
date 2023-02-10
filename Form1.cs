@@ -44,5 +44,11 @@ namespace Prefix_and_Postfix_to_Infix_Converter
             PrefixForm form2 = new PrefixForm();
             form2.Show();
         }
+
+        private void BTN_post_Click(object sender, EventArgs e)
+        {
+            PostfixForm form3 = new PostfixForm();
+            form3.Show();
+        }
     }
 }
