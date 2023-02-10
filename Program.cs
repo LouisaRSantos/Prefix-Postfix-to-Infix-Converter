@@ -16,7 +16,7 @@ namespace Prefix_and_Postfix_to_Infix_Converter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new PrePostConverter());
         }
     }
 }
