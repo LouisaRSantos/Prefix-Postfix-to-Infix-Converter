@@ -33,13 +33,14 @@
             this.RTB1_F3 = new System.Windows.Forms.RichTextBox();
             this.btnconvert_F3 = new System.Windows.Forms.Button();
             this.T1_F3 = new System.Windows.Forms.TextBox();
+            this.LBL1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LBL2_F3
             // 
             this.LBL2_F3.AutoSize = true;
             this.LBL2_F3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBL2_F3.Location = new System.Drawing.Point(43, 162);
+            this.LBL2_F3.Location = new System.Drawing.Point(43, 177);
             this.LBL2_F3.Name = "LBL2_F3";
             this.LBL2_F3.Size = new System.Drawing.Size(90, 13);
             this.LBL2_F3.TabIndex = 9;
@@ -49,7 +50,7 @@
             // 
             this.LB1_F3.AutoSize = true;
             this.LB1_F3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LB1_F3.Location = new System.Drawing.Point(43, 63);
+            this.LB1_F3.Location = new System.Drawing.Point(43, 78);
             this.LB1_F3.Name = "LB1_F3";
             this.LB1_F3.Size = new System.Drawing.Size(215, 13);
             this.LB1_F3.TabIndex = 8;
@@ -58,7 +59,7 @@
             // RTB1_F3
             // 
             this.RTB1_F3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RTB1_F3.Location = new System.Drawing.Point(46, 178);
+            this.RTB1_F3.Location = new System.Drawing.Point(46, 193);
             this.RTB1_F3.Name = "RTB1_F3";
             this.RTB1_F3.Size = new System.Drawing.Size(296, 45);
             this.RTB1_F3.TabIndex = 7;
@@ -66,7 +67,7 @@
             // 
             // btnconvert_F3
             // 
-            this.btnconvert_F3.Location = new System.Drawing.Point(162, 121);
+            this.btnconvert_F3.Location = new System.Drawing.Point(162, 136);
             this.btnconvert_F3.Name = "btnconvert_F3";
             this.btnconvert_F3.Size = new System.Drawing.Size(75, 23);
             this.btnconvert_F3.TabIndex = 6;
@@ -76,10 +77,22 @@
             // 
             // T1_F3
             // 
-            this.T1_F3.Location = new System.Drawing.Point(46, 79);
+            this.T1_F3.Location = new System.Drawing.Point(46, 94);
             this.T1_F3.Name = "T1_F3";
             this.T1_F3.Size = new System.Drawing.Size(296, 20);
             this.T1_F3.TabIndex = 5;
+            // 
+            // LBL1
+            // 
+            this.LBL1.AutoSize = true;
+            this.LBL1.BackColor = System.Drawing.Color.Transparent;
+            this.LBL1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBL1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LBL1.Location = new System.Drawing.Point(126, 33);
+            this.LBL1.Name = "LBL1";
+            this.LBL1.Size = new System.Drawing.Size(140, 25);
+            this.LBL1.TabIndex = 10;
+            this.LBL1.Text = "Postfix -> Infix";
             // 
             // PostfixForm
             // 
@@ -87,6 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(385, 286);
+            this.Controls.Add(this.LBL1);
             this.Controls.Add(this.LBL2_F3);
             this.Controls.Add(this.LB1_F3);
             this.Controls.Add(this.RTB1_F3);
@@ -107,5 +121,6 @@
         private System.Windows.Forms.RichTextBox RTB1_F3;
         private System.Windows.Forms.Button btnconvert_F3;
         private System.Windows.Forms.TextBox T1_F3;
+        private System.Windows.Forms.Label LBL1;
     }
 }

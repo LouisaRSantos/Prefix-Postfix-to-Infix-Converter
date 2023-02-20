@@ -22,17 +22,7 @@ namespace Prefix_and_Postfix_to_Infix_Converter
 
         static bool isOperator(char x)
         {
-            switch (x)
-            {
-                case '+':
-                case '-':
-                case '*':
-                case '/':
-                case '^':
-                case '&':
-                    return true;
-            }
-            return false;
+            return x == '+' || x == '-' || x == '*' || x == '/' || x == '^';
         }
         public static string convert(string str)
         {
@@ -50,7 +40,8 @@ namespace Prefix_and_Postfix_to_Infix_Converter
                         string op1 = (string)stack.Pop();
                         string op2 = (string)stack.Pop();
 
-                        string temp = "(" + op1 + " " + c + " " + op2 + ")";
+                        string temp = "(" + op1 + " " + c + " " + op2 + ")";    //with ()
+                        //string temp = op1 + " " + c + " " + op2;              //without ()
                         stack.Push(temp);
                     }
                     else

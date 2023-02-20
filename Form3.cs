@@ -22,6 +22,7 @@ namespace Prefix_and_Postfix_to_Infix_Converter
         static Boolean theOperand(char x)
         {
             return (x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z');
+            //return x == '+' || x == '-' || x == '*' || x == '/' || x == '^';
         }
 
         static String getInfix(String exp)
