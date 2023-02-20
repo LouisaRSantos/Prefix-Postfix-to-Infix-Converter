@@ -35,17 +35,17 @@
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.creatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.converterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LBL1 = new System.Windows.Forms.Label();
             this.LBL2 = new System.Windows.Forms.Label();
             this.BTN_pre = new System.Windows.Forms.Button();
             this.BTN_post = new System.Windows.Forms.Button();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem,
             this.aboutUsToolStripMenuItem,
@@ -67,7 +67,7 @@
             // howToUseToolStripMenuItem
             // 
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.howToUseToolStripMenuItem.Text = "How to use?";
             this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
             // 
@@ -83,16 +83,23 @@
             // creatorToolStripMenuItem
             // 
             this.creatorToolStripMenuItem.Name = "creatorToolStripMenuItem";
-            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.creatorToolStripMenuItem.Text = "Creator";
             this.creatorToolStripMenuItem.Click += new System.EventHandler(this.creatorToolStripMenuItem_Click);
             // 
             // converterToolStripMenuItem
             // 
             this.converterToolStripMenuItem.Name = "converterToolStripMenuItem";
-            this.converterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.converterToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.converterToolStripMenuItem.Text = "Converter";
             this.converterToolStripMenuItem.Click += new System.EventHandler(this.converterToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // LBL1
             // 
@@ -119,30 +126,25 @@
             // 
             // BTN_pre
             // 
+            this.BTN_pre.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BTN_pre.Location = new System.Drawing.Point(70, 182);
             this.BTN_pre.Name = "BTN_pre";
             this.BTN_pre.Size = new System.Drawing.Size(78, 33);
             this.BTN_pre.TabIndex = 3;
             this.BTN_pre.Text = "Prefix";
-            this.BTN_pre.UseVisualStyleBackColor = true;
+            this.BTN_pre.UseVisualStyleBackColor = false;
             this.BTN_pre.Click += new System.EventHandler(this.BTN_pre_Click);
             // 
             // BTN_post
             // 
+            this.BTN_post.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BTN_post.Location = new System.Drawing.Point(253, 182);
             this.BTN_post.Name = "BTN_post";
             this.BTN_post.Size = new System.Drawing.Size(78, 33);
             this.BTN_post.TabIndex = 4;
             this.BTN_post.Text = "Postfix";
-            this.BTN_post.UseVisualStyleBackColor = true;
+            this.BTN_post.UseVisualStyleBackColor = false;
             this.BTN_post.Click += new System.EventHandler(this.BTN_post_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // PrePostConverter
             // 
