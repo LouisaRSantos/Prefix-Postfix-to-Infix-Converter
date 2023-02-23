@@ -25,28 +25,27 @@ namespace Prefix_and_Postfix_to_Infix_Converter
             //return x == '+' || x == '-' || x == '*' || x == '/' || x == '^';
         }
 
-        static String getInfix(String exp)
+        public static String ConvertPostfixToInfix(String postfix)
         {
             try
             {
-                Stack s = new Stack();
+                Stack<string> stack = new Stack<string>();
 
-                for (int i = 0; i < exp.Length; i++)
+                for (int i = 0; i < postfix.Length; i++)
                 {
-                    if (theOperand(exp[i]))
+                    if (theOperand(postfix[i]))
                     {
-                        s.Push(exp[i] + "");
+                        stack.Push(postfix[i].ToString());
                     }
                     else
                     {
-                        String op1 = (String)s.Peek();
-                        s.Pop();
-                        String op2 = (String)s.Peek();
-                        s.Pop();
-                        s.Push("(" + op2 + " " + exp[i] + " " + op1 + ")");
+                        string operand1 = stack.Pop();
+                        string operand2 = stack.Pop();
+                        string temp = "(" + operand2 + postfix[i] + operand1 + ")";
+                        stack.Push(temp);
                     }
                 }
-                return (String)s.Peek();
+                return stack.Pop();
             }
             catch
             {
@@ -58,7 +57,7 @@ namespace Prefix_and_Postfix_to_Infix_Converter
         private void btnconvert_F3_Click(object sender, EventArgs e)
         {
             string exp = T1_F3.Text;
-            RTB1_F3.Text = getInfix(exp);
+            RTB1_F3.Text = ConvertPostfixToInfix(exp);
         }
 
         private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)

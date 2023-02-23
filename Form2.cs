@@ -19,28 +19,33 @@ namespace Prefix_and_Postfix_to_Infix_Converter
             InitializeComponent();
             instance = this;
         }
-
+        //A static method that returns a Boolean value.
         static bool isOperator(char x)
         {
             return x == '+' || x == '-' || x == '*' || x == '/' || x == '^';
         }
-        public static string convert(string str)
+
+        public static string ConvertPrefixToInfix(string prefix)
         {
             try
             {
+                //created a stack
                 Stack stack = new Stack();
-                int l = str.Length;
+                //int variable l
+                int l = prefix.Length;
 
                 for (int i = l - 1; i >= 0; i--)
                 {
-                    char c = str[i];
+                    //define variable char
+                    char c = prefix[i];
 
                     if (isOperator(c))
                     {
-                        string op1 = (string)stack.Pop();
-                        string op2 = (string)stack.Pop();
+                        //operand is the variable like constant
+                        string operand1 = (string)stack.Pop();
+                        string operand2 = (string)stack.Pop();
 
-                        string temp = "(" + op1 + " " + c + " " + op2 + ")";    //with ()
+                        string temp = "(" + operand1 + " " + c + " " + operand2 + ")";    //with ()
                         //string temp = op1 + " " + c + " " + op2;              //without ()
                         stack.Push(temp);
                     }
@@ -49,6 +54,8 @@ namespace Prefix_and_Postfix_to_Infix_Converter
                         stack.Push(c + "");
                     }
                 }
+                //Once we have processed all the characters in the expression, the final 
+                //infix expression is the top element of the stack, so we simply pop it and return it.
                 return (string)stack.Pop();
             }
             catch
@@ -60,7 +67,7 @@ namespace Prefix_and_Postfix_to_Infix_Converter
         private void btnconvert_Click(object sender, EventArgs e)
         {
             string exp = T1_F2.Text;
-            RTB1_F2.Text = convert(exp);
+            RTB1_F2.Text = ConvertPrefixToInfix(exp);
         }
 
         private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)
