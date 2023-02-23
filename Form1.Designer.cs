@@ -63,11 +63,12 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
+            this.helpToolStripMenuItem.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
             // howToUseToolStripMenuItem
             // 
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.howToUseToolStripMenuItem.Text = "How to use?";
             this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
             // 
@@ -83,14 +84,14 @@
             // creatorToolStripMenuItem
             // 
             this.creatorToolStripMenuItem.Name = "creatorToolStripMenuItem";
-            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.creatorToolStripMenuItem.Text = "Creator";
             this.creatorToolStripMenuItem.Click += new System.EventHandler(this.creatorToolStripMenuItem_Click);
             // 
             // converterToolStripMenuItem
             // 
             this.converterToolStripMenuItem.Name = "converterToolStripMenuItem";
-            this.converterToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.converterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.converterToolStripMenuItem.Text = "Converter";
             this.converterToolStripMenuItem.Click += new System.EventHandler(this.converterToolStripMenuItem_Click);
             // 

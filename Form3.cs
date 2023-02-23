@@ -60,5 +60,29 @@ namespace Prefix_and_Postfix_to_Infix_Converter
             string exp = T1_F3.Text;
             RTB1_F3.Text = getInfix(exp);
         }
+
+        private void howToUseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Type in the postfix expression you\n" + "like to convert, then press the\n" +
+                "'convert' button.");
+        }
+
+        private void creatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("To Infix is built with the help of the\n" + "collaborative minds of the creators:\n" + "\n" +
+                "Lambino, Carl Andrei\n" + "Margallo, Acel Gabrielle\n" + "Santos, Louisa Reighn\n" +
+                "Trinidad, John Lawrence");
+        }
+
+        private void converterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("To Infix is a simple but terrible converter tool\n" +
+                "that converts prefix or postfix expressions to infix notation!");
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

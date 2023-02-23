@@ -50,5 +50,10 @@ namespace Prefix_and_Postfix_to_Infix_Converter
             PostfixForm form3 = new PostfixForm();
             form3.Show();
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
